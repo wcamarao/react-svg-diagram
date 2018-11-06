@@ -1,0 +1,31 @@
+.svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  &.drag {
+    cursor: move;
+  }
+
+  &.resize {
+    &.north,
+    &.south {
+      cursor: ns-resize;
+    }
+
+    &.east,
+    &.west {
+      cursor: ew-resize;
+    }
+
+    &.north.west,
+    &.south.east {
+      cursor: nwse-resize;
+    }
+
+    &.north.east,
+    &.south.west {
+      cursor: nesw-resize;
+    }
+  }
+}
